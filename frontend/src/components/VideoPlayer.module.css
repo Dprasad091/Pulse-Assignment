@@ -1,0 +1,39 @@
+/* VideoPlayer.module.css */
+
+.playerContainer {
+  border: 1px solid #ddd;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-base);
+  background-color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.videoElement {
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--border-radius-base);
+  background-color: black;
+  margin-bottom: var(--spacing-sm);
+}
+
+.qualitySelector {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.9em;
+}
+
+.qualitySelector label {
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-right: var(--spacing-sm);
+}
+
+.qualitySelector select {
+  width: auto;
+  padding: var(--spacing-xs);
+  border: 1px solid #ced4da;
+  border-radius: var(--border-radius-base);
+  background-color: #fff;
+}

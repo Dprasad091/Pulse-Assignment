@@ -1,0 +1,85 @@
+/* UploadForm.module.css */
+
+.formContainer {
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  border: 2px dashed #ced4da; /* Dashed border matching the design */
+  border-radius: var(--border-radius-base);
+  background-color: var(--color-text-light);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.formContainer:hover {
+  border-color: var(--color-primary);
+  background-color: #f7f7ff;
+}
+
+.dropIcon {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.fileInput {
+  display: none; /* Hide the default file input */
+}
+
+.fileLabel {
+  display: block;
+  font-size: 1.1em;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.selectButton {
+  /* Inherit global button styles but make it stand out */
+  background-color: var(--color-primary);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* Metadata Fields (for manual input below the drop area) */
+.metadataInput {
+  margin-top: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--spacing-xl);
+}
+
+.metadataInput input,
+.metadataInput textarea {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Progress Indicators */
+.uploadProgress {
+  margin-top: var(--spacing-sm);
+  font-weight: bold;
+}
+
+.progressBar {
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: var(--border-radius-base);
+  overflow: hidden;
+  margin-top: var(--spacing-sm);
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--color-primary);
+  transition: width 0.5s ease;
+}
+
+.messageSuccess {
+  color: var(--color-success);
+  font-weight: bold;
+}
+
+.messageError {
+  color: var(--color-danger);
+  font-weight: bold;
+}

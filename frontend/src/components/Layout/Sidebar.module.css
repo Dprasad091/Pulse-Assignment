@@ -1,0 +1,85 @@
+/* Sidebar.module.css (For reference, if using modular classes) */
+
+.sidebarContainer {
+  width: 250px;
+  background-color: white;
+  height: 100vh;
+  padding: var(--spacing-md);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarHeader {
+  border-bottom: 1px solid #eee;
+  padding-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.sidebarHeading {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-sm);
+  border: 1px solid #eee;
+  border-radius: var(--border-radius-base);
+  margin-top: var(--spacing-sm);
+}
+
+.avatar {
+  background: var(--color-primary);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: var(--spacing-sm);
+  font-weight: bold;
+}
+
+.userName {
+  font-weight: bold;
+  display: block;
+  line-height: 1.2;
+}
+
+.role {
+  font-size: 0.85em;
+  color: var(--color-secondary);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+  border-radius: var(--border-radius-base);
+  text-decoration: none;
+  color: var(--color-text-dark);
+  transition: background 0.2s, color 0.2s;
+}
+
+.navItem:hover {
+  background: #f8f8f8;
+}
+
+.navItem.active {
+  background: #f0f0ff; /* Light primary color background */
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.logoutButton {
+  margin-top: auto; /* Push to the bottom */
+  background: var(--color-danger);
+  width: 100%;
+}
